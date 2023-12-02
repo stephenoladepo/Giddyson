@@ -1,0 +1,53 @@
+.header{
+  position: fixed;
+  display: flex;
+  background-color: green;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 80px;
+  padding:20px;
+  justify-content: space-evenly;
+  align-content: center;
+  z-index: 100;
+}
+.logo-box{
+  width: 60px;
+}
+.logo{
+  width: 100%;
+}
+.home-box,.ourproduct-box,.aboutus-box,.newsmedia-box,.contact-box{
+  display: flex;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 40px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  transition: background-color 0.5s;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.home-box:hover,.ourproduct-box:hover,
+.aboutus-box:hover,.newsmedia-box:hover,.contact-box:hover{
+  background-color: rgba(240, 240, 240, 0.103);
+  transform: scale(1.1);
+}
+.home-box::after,.home-box::after,.home-box::after,
+.ourproduct-box::after,.aboutus-box::after,.newsmedia-box::after,.contact-box::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+.home-box:hover::after,.ourproduct-box:hover::after,.aboutus-box:hover::after,
+.newsmedia-box:hover::after,.contact-box:hover::after{
+  width: 100%;
+}

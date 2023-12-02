@@ -1,0 +1,11 @@
+.footer{
+  margin-top: 25px;
+  padding: 20px;
+  display: flex;
+  background-color: green;
+  flex-direction: row;
+  justify-content:space-evenly;
+  column-gap: 10px;
+}
+.contact-footer{
+}
